@@ -1,0 +1,8 @@
+%h1 Car Shop
+=link_to "Add Car", new_car_path
+%br
+-@cars.each do |car|
+  =car.model
+  =car.city
+  =link_to "View car", car_path(car)
+  %br

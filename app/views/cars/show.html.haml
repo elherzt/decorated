@@ -1,0 +1,32 @@
+.content
+  .left
+    %h2 Car for sale
+    %h4 Picture:
+    =@car.picture
+    %h4 
+      Brand:
+    =@car.brand_name
+  .right
+    %h4
+      Model:
+    =@car.model.model
+    %h4 
+      Year:
+    =@car.car_year
+    %h4 
+      Notes:
+    =@car.car_notes
+    %h4 
+      Price: $
+    =@car.car_price
+    %h4 
+      Owner:
+    =@car.car_owner
+    %h4 
+      Phone: 
+    =@car.phone
+    %h4 
+      City:
+    =@car.city
+    %br
+    =link_to "Back", :back
